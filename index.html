@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Barbería a Domicilio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav>
+            <div class="logo">
+                LERABARBER
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cortes">Cortes</a></li>
+                <li><a href="#reserva">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HERO / INICIO -->
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    BARBERÍA A DOMICILIO
+                </p>
+
+                <h1>
+                    Tu corte, donde estés.
+                </h1>
+
+                <p>
+                    Cortes profesionales directamente en la comodidad de tu hogar.
+                </p>
+
+                <a href="#reserva" class="btn">
+                    Reservar cita
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- OFERTA DEL DÍA -->
+        <section class="daily-offer">
+
+            <p>
+                Oferta del día:
+                <strong id="daily-offer-text">Próximamente</strong>
+            </p>
+
+        </section>
+
+
+        <!-- CATÁLOGO -->
+        <section id="cortes" class="cuts-section">
+
+            <div class="section-header">
+                <p class="section-subtitle">
+                    NUESTRO TRABAJO
+                </p>
+
+                <h2>
+                    Catálogo de cortes
+                </h2>
+
+                <p>
+                    Estos son algunos de los estilos que realizamos.
+                    Todos los cortes tienen un precio de 500 CUP.
+                </p>
+            </div>
+
+
+            <div id="cuts-container" class="cuts-container">
+
+                <!-- Los cortes se cargarán mediante JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICIOS -->
+        <section class="services-section">
+
+            <div class="section-header">
+
+                <p class="section-subtitle">
+                    OTROS SERVICIOS
+                </p>
+
+                <h2>
+                    Barba y cejas
+                </h2>
+
+            </div>
+
+
+            <div class="services-container">
+
+                <div class="service-card">
+                    <h3>Barba</h3>
+                    <p>100 CUP</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Cejas</h3>
+                    <p>100 CUP</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESERVA -->
+        <section id="reserva" class="booking-section">
+
+            <div class="section-header">
+
+                <p class="section-subtitle">
+                    RESERVA TU CITA
+                </p>
+
+                <h2>
+                    Solicita tu servicio
+                </h2>
+
+                <p>
+                    <p>
+    Indícanos el día, la hora y tu ubicación.
+    Nos pondremos en contacto contigo por WhatsApp
+    para confirmar tu cita.
+                </p>
+                </p>
+
+            </div>
+
+
+            <form id="booking-form">
+
+            
+
+
+                <!-- FECHA -->
+                <div class="form-group">
+
+                    <label for="date">
+                        Día
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- HORA -->
+                <div class="form-group">
+
+                    <label for="time">
+                        Hora
+                    </label>
+
+                    <input
+                        type="time"
+                        id="time"
+                        name="time"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- DIRECCIÓN -->
+                <div class="form-group">
+
+                    <label for="address">
+                        Dirección
+                    </label>
+
+                    <input
+                        type="text"
+                        id="address"
+                        name="address"
+                        placeholder="Ej: Calle 10 #123"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- REFERENCIA -->
+                <div class="form-group">
+
+                    <label for="reference">
+                        Punto de referencia
+                    </label>
+
+                    <input
+                        type="text"
+                        id="reference"
+                        name="reference"
+                        placeholder="Ej: Frente al parque"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit" class="btn">
+                    Reservar por WhatsApp
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Barbería a Domicilio
+        </p>
+
+        <p>
+            Holguín, Cuba
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>

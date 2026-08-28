@@ -1,0 +1,432 @@
+/* ================================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #111;
+    color: #fff;
+
+    position: relative;
+}
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    width: 500px;
+    height: 500px;
+
+    transform: translate(-50%, -50%);
+
+    background-image: url("../images/logo.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.05;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+
+/* ================================
+   NAVEGACIÓN
+================================ */
+
+header {
+    width: 100%;
+    background: #111;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 80vh;
+    padding: 80px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-subtitle,
+.section-subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   BOTONES
+================================ */
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: #fff;
+    color: #111;
+
+    border: none;
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   OFERTA DEL DÍA
+================================ */
+
+.daily-offer {
+    padding: 15px 20px;
+
+    text-align: center;
+
+    background: #222;
+
+    font-size: 0.95rem;
+}
+
+.daily-offer strong {
+    margin-left: 5px;
+}
+
+
+/* ================================
+   SECCIONES
+================================ */
+
+.cuts-section,
+.services-section,
+.booking-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 90px 20px;
+}
+
+.section-header {
+    max-width: 650px;
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   CATÁLOGO
+================================ */
+
+.cuts-container {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+.cut-card {
+    background: #1d1d1d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cut-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.cut-card-content {
+    padding: 20px;
+}
+
+.cut-card h3 {
+    margin-bottom: 8px;
+}
+
+.cut-card p {
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.cut-price {
+    font-weight: bold;
+}
+
+
+/* ================================
+   SERVICIOS
+================================ */
+
+.services-container {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+
+    gap: 20px;
+}
+
+.service-card {
+    padding: 30px 20px;
+
+    background: #1d1d1d;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-weight: bold;
+}
+
+
+/* ================================
+   RESERVA
+================================ */
+
+.booking-section {
+    max-width: 700px;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #444;
+    border-radius: 5px;
+
+    background: #1d1d1d;
+    color: #fff;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #fff;
+}
+
+#booking-form .btn {
+    margin-top: 10px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background: #0a0a0a;
+
+    color: #aaa;
+
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* ================================
+   MÓVILES
+================================ */
+
+@media (max-width: 600px) {
+
+    /* NAVEGACIÓN */
+
+    nav {
+        padding: 15px 20px;
+
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 20px;
+
+        font-size: 0.9rem;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 70vh;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+
+    /* SECCIONES */
+
+    .cuts-section,
+    .services-section,
+    .booking-section {
+        padding: 70px 20px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+
+    /* CATÁLOGO */
+
+    .cuts-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* SERVICIOS */
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FORMULARIO */
+
+    .form-group input,
+    .form-group select {
+        padding: 16px;
+    }
+
+    #booking-form .btn {
+        width: 100%;
+        padding: 16px;
+    }
+
+
+    /* MARCA DE AGUA */
+
+    body::before {
+        width: 350px;
+        height: 350px;
+    }
+
+}
