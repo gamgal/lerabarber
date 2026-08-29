@@ -428,5 +428,12 @@ footer p {
         width: 350px;
         height: 350px;
     }
-
+.booking-notice {
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+    opacity: 0.85;
+}
 }
