@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lerabarber.yoanp7981.workers.dev/sitemap.xml
